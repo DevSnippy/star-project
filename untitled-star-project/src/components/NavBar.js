@@ -2,12 +2,15 @@ import { FaGithub , FaUserAstronaut ,FaMeteor , FaLinkedin} from 'react-icons/fa
 
 function NavBar () {
     return (
- <div className="flex justify-between items-center text-6xl">
-<ul className="flex gap-4"><FaUserAstronaut/></ul>
-<ul><FaGithub/></ul>
-<ul><FaMeteor/></ul>
-<ul><FaLinkedin/></ul>
+        <nav className=''>
+ <div className="flex justify-around items-center text-5xl">
+
+<ul className='flex  hover:scale-125 hover:bg-white duration-300 rounded-full'><FaUserAstronaut/></ul>
+<ul className='flex  hover:scale-125 hover:bg-white duration-300 rounded-full'><a href='https://github.com/DevSnippy'><FaGithub/></a></ul>
+<ul className='flex  hover:scale-125 hover:bg-white duration-300 rounded-full'><FaMeteor/></ul>
+<ul className='flex  hover:scale-125 hover:bg-white duration-300 rounded-full'><FaLinkedin/></ul>
 </div>
+</nav>
     )
 }
 
